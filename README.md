@@ -12,25 +12,32 @@ A RESTful API built with Node.js, Express, and MongoDB, featuring JWT-based user
 ## Setup
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/node-rest-api.git
+   ```
+   bash
+   git clone git@github.com:gyanprakashtiwari/express-contacts.git
    ```
 2. Navigate to the project directory:
 
-```cd node-rest-api```
+```
+cd express-contacts
+```
+
 3. Install dependencies:
 
-```npm install```
+```
+npm install
+```
+
 4. Create a .env file in the project root:
-```
-    PORT=3000
-    MONGO_URI=your_mongodb_connection_string
-    JWT_SECRET=your_jwt_secret_key
-```
+
+   ````PORT=3000
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret_key```
+
+   ````
+
 5. Start the server locally:
 
 ```
-npm run dev
+   npm run dev
 ```
-
-
