@@ -4,12 +4,14 @@ const cors = require("cors");
 const userRoutes = require("./routes/userRoutes");
 const authRoutes = require("./routes/authRoutes");
 const contactRoutes = require("./routes/contactRoutes");
+const logger = require("./middleware/logger");
 
 const app = express();
 
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
+app.use(logger);
 
 // Routes
 app.use("/api/v1/users", userRoutes);
