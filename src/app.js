@@ -14,8 +14,8 @@ app.use(bodyParser.json());
 app.use(logger);
 
 // Routes
-app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/contacts", contactRoutes);
 
 // Default Route
